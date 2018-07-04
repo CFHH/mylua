@@ -50,7 +50,7 @@ struct Nil
 */
 class LuaRef
 {
-private:
+public:
   class Proxy;
   friend struct Stack <Proxy>;
 
@@ -541,6 +541,7 @@ private:
 
       @note The object is popped.
   */
+
   LuaRef (lua_State* L, FromStack)
     : m_L (L)
   {

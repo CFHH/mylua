@@ -34,6 +34,11 @@ private:
   std::string m_what;
 
 public:
+    LuaException(lua_State* L, char const* msg)
+    {
+        m_L = L;
+        m_what = msg;
+    }
   //----------------------------------------------------------------------------
   /**
       Construct a LuaException after a lua_pcall().
