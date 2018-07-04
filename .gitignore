@@ -1,0 +1,3 @@
+/LuaJIT/src/host/buildvm_arch.h
+/LuaJIT/src/jit/vmdef.lua
+*.exe
