@@ -285,7 +285,7 @@
       <AdditionalDependencies>$(TargetDir)lj_vm.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy  $(OutDir)$(TargetName)$(TargetExt)  $(OutDir)..\..\luajit\src\$(TargetName)$(TargetExt)</Command>
+      <Command>copy  $(OutDir)$(TargetName)$(TargetExt)  $(OutDir)..\..\LuaJIT\$(TargetName)$(TargetExt)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -308,7 +308,7 @@
       <AdditionalDependencies>$(TargetDir)lj_vm.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy  $(OutDir)$(TargetName)$(TargetExt)  $(OutDir)..\..\luajit\src\$(TargetName)$(TargetExt)</Command>
+      <Command>copy  $(OutDir)$(TargetName)$(TargetExt)  $(OutDir)..\..\LuaJIT\$(TargetName)$(TargetExt)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
